@@ -1,6 +1,10 @@
 import time
 import random
 
+
+#Shoots random numbers at you until you get 50 and then prints how many tries it took
+
+
 def trolli():
     yritykset = 0
     luku = 0
