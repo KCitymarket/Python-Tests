@@ -4,9 +4,15 @@ import requests
 import time
 from urllib.request import Request
 
+#Super simple python code that takes our school cafeteria's menu and prints it
+#Q&A Q:"Does it work?" A:"shut up"
 
+#these two lines fetch the site
 urlReq = Request("https://www.sodexo.fi/ruokalistat/output/weekly_json/115", headers = {"User-Agent": "Mozilla/5.0"})
 data = urllib.request.urlopen(urlReq).read()
+
+#these take the correct lists or whatever
+#sodMa means sodexo maanantai, sodTi means sodexo tiistai and so on
 
 sodMa = json.loads(data)["mealdates"][0]
 sodMa1 = sodMa["courses"]
