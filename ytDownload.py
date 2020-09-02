@@ -1,10 +1,10 @@
 from pytube import YouTube
 
 # this really sucks tbh. it's not just my code but pytube library sucks too.
-# if this doesnt work download pytube3 with "pip install pytube3"
-# if it still doesnt work its most likely because of KeyError: 'cipher'
+# if this doesn't work, download pytube3 with "pip install pytube3"
+# if it still doesnt work it's most likely because of KeyError: 'cipher'
 # if you get that error go to "extract.py" and around line 300 you have to correct 
-# parse_qs(formats[i]["Cipher"]) to parse_qs(formats[i]["signatureCipher"])
+# "parse_qs(formats[i]["Cipher"])" to "parse_qs(formats[i]["signatureCipher"])"
 
 def crap():
     print("Youtube video url:")
